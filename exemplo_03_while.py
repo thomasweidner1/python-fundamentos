@@ -28,18 +28,18 @@ def solicitar_ate_fim():
 
 def descobrir_quantidade_por_categoria():
     quantidade_sc, quantidade_pr, quantidade_rs, quantidade_outros, indicie = 0, 0, 0, 0, 0
-        while indice < 6:
+    while indice < 6:
         cidade = input("Digite o nome da cidade: ")
         estado = input("Digite a sigla do estado: ").strip()
-        if estado.lower() == "sc":
-            quantidade_sc = quantidade_sc + 1
-        elif estado.lower() == "pr":
-            quantidade_pr = quantidade_pr + 1
-        elif estado.lower() == "rs":
-            quantidade_rs = quantidade_rs + 1
-        else:
-            quantidade_outros = quantidade_outros + 1
-        indice = indice + 1
+    if estado.lower() == "sc":
+        quantidade_sc = quantidade_sc + 1
+    elif estado.lower() == "pr":
+        quantidade_pr = quantidade_pr + 1
+    elif estado.lower() == "rs":
+        quantidade_rs = quantidade_rs + 1
+    else:
+        quantidade_outros = quantidade_outros + 1
+    indice = indice + 1
 
     print("Quantidade SC:", quantidade_sc)
     print("Quantidade PR:", quantidade_pr)
